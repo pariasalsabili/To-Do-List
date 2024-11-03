@@ -42,7 +42,7 @@ A modern, responsive calendar app that lets users manage a to-do list for each d
     $database = 'calendar_todo_app'; 
 
 6. **Run the Application**
-  - Visit http://localhost/to-do-list(or YOUR file's name) in your browser to see the app in action.
+  - Visit http://localhost/to-do-list (or YOUR file's name) in your browser to see the app in action.
 
 
 ## License
