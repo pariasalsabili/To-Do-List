@@ -37,8 +37,8 @@ A modern, responsive calendar app that lets users manage a to-do list for each d
   - Open api.php and update the database connection details:
     ```bash
     $host = 'localhost';
-    $user = 'root'; // Default username for XAMPP
-    $password = ''; // Default password is empty
+    $user = 'root';
+    $password = ''; 
     $database = 'calendar_todo_app'; 
 
 6. **Run the Application**
