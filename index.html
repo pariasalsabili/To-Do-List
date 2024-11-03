@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar with To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="calendar">
+    <div id="month-controls">
+        <button onclick="changeMonth(-1)" class="icon-button">
+            <i class="fa fa-angle-left"></i>
+        </button>
+        <h2 id="monthYearDisplay"></h2>
+        <button onclick="changeMonth(1)" class="icon-button">
+            <i class="fa fa-angle-right"></i>
+        </button>
+    </div>
+    <div id="days">
+
+    </div>
+</div>
+
+<div id="tasks" class="hidden">
+    <button onclick="showCalendar()" class="icon-button back-button">
+        <i class="fa fa-arrow-left"></i>
+    </button>
+    <h2>Tasks for <span id="selectedDate"></span></h2>
+    <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="taskList">
+
+        </tbody>
+    </table>
+    <input type="text" id="newTask" placeholder="New task" />
+    <button id="addingtask" onclick="addTask()">Add Task</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
